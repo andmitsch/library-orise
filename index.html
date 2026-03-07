@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>oRise · GDS Document Library</title>
+<title>oRise · Proposal Document Library</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap');
 
@@ -434,14 +434,14 @@
     inset: 0;
     background: rgba(30,30,20,0.65);
     z-index: 200;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
     align-items: center;
     justify-content: center;
   }
 
   .modal-backdrop.open {
     display: flex;
-    animation: modalIn 0.3s ease;
+    animation: modalIn 0.4s ease;
   }
 
   .modal {
@@ -566,7 +566,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    animation: shimmerOut 0.5s ease forwards 0.8s;
+    animation: shimmerOut 0.8s ease forwards 0.8s;
     pointer-events: none;
   }
 
@@ -577,14 +577,14 @@
     letter-spacing: 0.3em;
     color: var(--near-black);
     opacity: 0;
-    animation: fadeUp 0.4s ease forwards 0.1s;
+    animation: fadeUp 0.6s ease forwards 0.2s;
   }
 
   .shimmer-rule {
     width: 0;
     height: 2px;
     background: var(--lime);
-    animation: expandRule 0.5s ease forwards 0.2s;
+    animation: expandRule 0.6s ease forwards 0.2s;
   }
 
   .shimmer-sub {
@@ -656,7 +656,6 @@
   <span class="filter-label">Filter by</span>
   <button class="filter-btn active" onclick="filterDocs('all', this)">All</button>
   <button class="filter-btn" onclick="filterDocs('framework', this)">Frameworks</button>
-  <button class="filter-btn" onclick="filterDocs('phase-1', this)">Phase 1</button>
   <button class="filter-btn" onclick="filterDocs('templates', this)">Templates</button>
   <button class="filter-btn" onclick="filterDocs('strategy', this)">Strategy</button>
 </div>
@@ -680,7 +679,7 @@
             <div class="book-title">EMGS Framework</div>
           </div>
           <div class="book-cover-body">
-            <div class="book-description">Explore, Map, Grow, Scale — the four-stage opportunity maturation model that feeds the GDS pipeline with qualified hypotheses.</div>
+            <div class="book-description"> Evidence Maturity Gate System - A three-layer framework for evaluating idea submissions and managing the wedge pilot pipeline. Each layer asks one question to evaluate the input of the 7-question idea submission tool named Signal and the FRS (field reality statements) from customer conversations. .</div>
             <div class="book-tag-row">
               <span class="book-tag">Opportunity</span>
               <span class="book-tag">Discovery</span>
@@ -697,7 +696,7 @@
     </div>
     <div class="book-meta">
       <div class="book-meta-title">EMGS Framework</div>
-      <div class="book-meta-sub">Opportunity Maturation Model</div>
+      <div class="book-meta-sub">Opportunity Scoring Model</div>
       <a href="#" class="book-meta-link" onclick="openModal(0); return false;">Open Document</a>
     </div>
   </div>
@@ -709,13 +708,13 @@
         <div class="book-cover">
           <div class="book-cover-top" style="background:#1e2a1e;">
             <div class="book-eyebrow">oRise · Framework</div>
-            <div class="book-title">GDS Three Phase Model</div>
+            <div class="book-title">GDS - Three Phase Model Main Document</div>
           </div>
           <div class="book-cover-body">
-            <div class="book-description">The complete Growth Decision System — three phases from Diagnosis & Strategy through Build & Instrument to Scale & Monetize.</div>
+            <div class="book-description">The complete Growth Decision System at a glance. Three phases from Discovery, Diagnosis & Strategy through build, and test to scale commercialize.</div>
             <div class="book-tag-row">
               <span class="book-tag">GDS Core</span>
-              <span class="book-tag">3 Phases</span>
+              <span class="book-tag">GDS 3 Phases</span>
             </div>
           </div>
           <div class="book-cover-footer">
@@ -741,12 +740,12 @@
         <div class="book-cover">
           <div class="book-cover-top" style="background:#1a1f2a;">
             <div class="book-eyebrow">oRise · Strategy</div>
-            <div class="book-title">Mandate Proposals</div>
+            <div class="book-title">Mandate Proposal v2</div>
           </div>
           <div class="book-cover-body">
-            <div class="book-description">Structured mandate proposals for the oRise role — defining scope, authority, deliverables, and the Growth Decision System mandate.</div>
+            <div class="book-description">Structured mandate proposals for oRise Digitialization.</div>
             <div class="book-tag-row">
-              <span class="book-tag">Mandate</span>
+              <span class="book-tag">Proposal</span>
               <span class="book-tag">Strategy</span>
             </div>
           </div>
@@ -760,8 +759,8 @@
       </div>
     </div>
     <div class="book-meta">
-      <div class="book-meta-title">Mandate Proposals</div>
-      <div class="book-meta-sub">oRise Role & Scope Definition</div>
+      <div class="book-meta-title">Mandate Proposal v2</div>
+      <div class="book-meta-sub">oRise Role & Scope Document</div>
       <a href="#" class="book-meta-link" onclick="openModal(2); return false;">Open Document</a>
     </div>
   </div>
@@ -804,38 +803,6 @@
     </div>
   </div>
 
-  <!-- 5. Phase 1 Entry Brief -->
-  <div class="book-wrap" data-category="phase-1" data-index="4">
-    <div class="book-scene">
-      <div class="book" onclick="openModal(4)">
-        <div class="book-cover">
-          <div class="book-cover-top" style="background:#261e1a;">
-            <div class="book-eyebrow">oRise · Phase 1</div>
-            <div class="book-title">Phase 1 Entry Brief</div>
-          </div>
-          <div class="book-cover-body">
-            <div class="book-description">Working document for the sponsor alignment meeting — readiness checklist, ranked hypothesis set, known constraints, and sign-off block.</div>
-            <div class="book-tag-row">
-              <span class="book-tag">Entry Gate</span>
-              <span class="book-tag">Alignment</span>
-            </div>
-          </div>
-          <div class="book-cover-footer">
-            <span class="book-version">v1 · Alignment Doc</span>
-            <div class="book-open-icon">
-              <svg viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2l3 3-3 3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="book-meta">
-      <div class="book-meta-title">Phase 1 Entry Brief</div>
-      <div class="book-meta-sub">Sponsor Alignment & Gate Entry</div>
-      <a href="#" class="book-meta-link" onclick="openModal(4); return false;">Open Document</a>
-    </div>
-  </div>
-
   <!-- 6. Opportunity Discovery Guide -->
   <div class="book-wrap" data-category="phase-1" data-index="5">
     <div class="book-scene">
@@ -843,7 +810,7 @@
         <div class="book-cover">
           <div class="book-cover-top" style="background:#221e26;">
             <div class="book-eyebrow">oRise · Phase 1</div>
-            <div class="book-title">Opportunity Discovery Guide</div>
+            <div class="book-title">Opportunity Discovery Pre-Phase 1 Document</div>
           </div>
           <div class="book-cover-body">
             <div class="book-description">Fieldwork guide for wedge hypothesis discovery across portfolio companies — observation protocols, signal detection, and pain pattern synthesis.</div>
@@ -916,7 +883,7 @@
             <div class="book-title">Learning Methodology Cheatsheet</div>
           </div>
           <div class="book-cover-body">
-            <div class="book-description">Rapid-access cheatsheet covering the full oRise learning methodology — evidence thresholds, signal types, onboarding exit criteria, and loop design.</div>
+            <div class="book-description">Rapid-access cheatsheet covering the full GDS learning methodology. Evidence thresholds, signal types, onboarding exit criteria, and loop design.</div>
             <div class="book-tag-row">
               <span class="book-tag">Methodology</span>
               <span class="book-tag">Reference</span>
@@ -948,7 +915,7 @@
             <div class="book-title">Assumption & Risk Map</div>
           </div>
           <div class="book-cover-body">
-            <div class="book-description">Print-optimized DOCX templates for Phase 1 Assumption Mapping and Risk Framing — Kill assumption rows, DFV taxonomy, seven risk categories.</div>
+            <div class="book-description">Print-optimized DOCX templates for Phase 1 Assumption Mapping and Risk Framing.</div>
             <div class="book-tag-row">
               <span class="book-tag">Assumption</span>
               <span class="book-tag">Risk</span>
@@ -975,7 +942,7 @@
 
 <!-- Footer -->
 <footer class="site-footer">
-  oRise · GDS Document Library · Created by Andreas Mitschke · Internal Use Only
+  oRise · GDS Document Library · Created by Andreas Mitschke · Internal Use Only · Confidential
 </footer>
 
 <!-- Modal -->
@@ -1001,9 +968,9 @@ const DOCS = [
   {
     eyebrow: "oRise · Framework",
     title: "EMGS Framework",
-    body: "The Explore–Map–Grow–Scale framework is the pipeline engine of the Growth Decision System. It provides the structured discovery protocol that converts raw observations into qualified wedge hypotheses before they enter the GDS. Running continuously and permanently — not as a Phase 1 task.",
+    body: "The Evidence Maturity Growth System is the continuous discovery pipeline engine of the Growth Decision System. It provides a structured signal scoring model that qualifies raw observations into qualified wedge hypotheses before they enter the GDS.",
     tags: ["Opportunity Maturation", "Discovery", "Framework", "EMGS"],
-    url: "https://docs.google.com/document/d/YOUR_EMGS_ID/edit"
+    url: "https://docs.google.com/document/d/1qJ9PJz8UYRco0so1hDs_i2uKHt32Jec-/edit?usp=sharing&ouid=117167140681377271875&rtpof=true&sd=true"
   },
   {
     eyebrow: "oRise · Framework",
